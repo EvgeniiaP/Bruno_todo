@@ -116,6 +116,7 @@ button.header__btn-changeColor:focus, button.header__btn-changeColor:active{
   color: red;
   border: 1px solid red;
   border-radius: 2em;
+  background: #525252;
   flex: 1;
   margin-right: 0;
   margin-left: auto;

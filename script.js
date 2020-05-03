@@ -7,10 +7,6 @@ document.querySelector(".input__btn").addEventListener('click', addTextToDo);
 document.querySelector(".btn-rem").addEventListener('click', removeToDo);
 document.querySelector(".header__btn-changeColor").addEventListener('click', ChangeTheme);
 
-
-// версия красивая пробую добавить БЭМ
-  
-
 function addTextToDo(){
   var newTextItem=document.querySelector('.input__text').value;
   addItemBlock(newTextItem);
@@ -30,11 +26,9 @@ function removeToDo(x){
   let oldBlock = x.closest('.item');//нашли родителя кнопки
   let Done=x.previousElementSibling;//нашли предыдущий эл-т, это p
   let TextDone=Done.innerText;
-  let ind = arrToDo.indexOf(TextDone, 0); //надо заменить на фильтр
-  let nothing = arrToDo.splice(ind, 1);
+  arrToDo=arrToDo.filter(item => item!=TextDone);
   oldBlock.remove();//удалили div
   saveStorageItems(arrToDo);
-
 }
 
 function saveStorageItems(arrToDo){
@@ -49,7 +43,6 @@ function getList(){
     oldList=JSON.parse(liststring);
     oldList.forEach(addItemBlock);
     }
-
     
 function ChangeTheme(){
   let styleElement = document.querySelector('#theme-style');
@@ -60,6 +53,3 @@ function ChangeTheme(){
   }
   Black=!Black;
 };
-
-
-
