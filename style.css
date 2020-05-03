@@ -15,8 +15,8 @@ body{
     max-width: 1400px;
     background: rgb(188,239,210);
     padding: 1.5em;
-}
-.header{
+ }
+ .header{
     background: #4fffbc ;
     border: 1px solid #2930ff;
     border-radius: 1em;
@@ -28,11 +28,10 @@ body{
     color:  #2930ff;
     position: relative;
         }
-        
+
     .input__text, .input__text:focus, .input__text:active{
             outline: none;
         }
-
     button,  .input__text{
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -132,4 +131,3 @@ button.btn-rem:hover{
     font-size: 1.5em;
     cursor: pointer;
     }
-
