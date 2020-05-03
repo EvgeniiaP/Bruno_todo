@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    }
+body{
+    background: #E5E5E5;
+    margin: 0 auto;
+    }
+
+.wrap{
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1400px;
+    background: rgb(188,239,210);
+    padding: 1.5em;
+}
+.header{
+    background: #4fffbc ;
+    border: 1px solid #2930ff;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 1.5em;
+    font-family: Roboto, sans-serif, serif;
+    color:  #2930ff;
+    position: relative;
+        }
+        
+    .input__text, .input__text:focus, .input__text:active{
+            outline: none;
+        }
+
+    button,  .input__text{
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+    button.header__btn-changeColor{
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        border: 1px solid #2930ff;
+        border-radius: 1em;
+        color: #2930ff;
+        padding: 1.5em;
+        background-color: #deffe6;
+        outline: none;
+    }
+    button.header__btn-changeColor:hover{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0.5em;
+        cursor: pointer;
+        outline: none;
+    }
+
+    button.header__btn-changeColor:focus, button.header__btn-changeColor:active{
+        outline: none;
+    }
+
+.input{
+    display: flex;
+    margin-top: 1.5em;
+    height: 80px;
+    }
+.input__text{
+    border: 1px solid #03fa1b;
+    flex: 2;
+    border-radius: 1em;
+    padding: 1em;
+    background: #deffe6;
+    box-shadow: 0px 0px 10px #000000;
+    color:#2930ff;
+}
+.input__text:hover{
+    background-color:#fff;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.input__text:focus{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+#btn-submit{
+   flex: 1;
+   border: 1px solid #03fa1b;
+   border-radius: 1em;
+   padding: 1em;
+   margin-left: 2em;
+   background: #deffe6;
+   box-shadow: 0px 0px 10px #000000;
+}
+#btn-submit:hover{
+    color: #2930ff;
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.item{
+    display: flex;
+    margin-top: 1em;
+    background-color: #deffe6;
+    border: 1px solid #03fa1b;
+    border-radius: 1em;
+    padding: 1em;
+}
+.item div + div{
+    margin-top: 1em;
+    padding: 1em;
+}
+.item p{
+   font-size: 1.5em;
+   flex: 15;
+  }
+button.btn-rem{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 2em;
+    flex: 1;
+    margin-right: 0;
+    margin-left: auto;
+}
+button.btn-rem:hover{
+    font-size: 1.5em;
+    cursor: pointer;
+    }
+
