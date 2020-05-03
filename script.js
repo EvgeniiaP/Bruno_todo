@@ -27,7 +27,7 @@ function removeToDo(x){
   let Done=x.previousElementSibling;//нашли предыдущий эл-т, это p
   let TextDone=Done.innerText;
   arrToDo=arrToDo.filter(item => item!=TextDone);
-  oldBlock.remove();//удалили div
+  oldBlock.remove();
   saveStorageItems(arrToDo);
 }
 
